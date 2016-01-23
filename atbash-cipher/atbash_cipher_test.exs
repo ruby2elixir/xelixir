@@ -9,22 +9,22 @@ defmodule AtbashTest do
     assert Atbash.encode("no") == "ml"
   end
 
-  @tag :pending
+  #@tag :pending
   test "encode yes" do
     assert Atbash.encode("yes") == "bvh"
   end
 
-  @tag :pending
+  #@tag :pending
   test "encode OMG" do
     assert Atbash.encode("OMG") == "lnt"
   end
 
-  @tag :pending
+  #@tag :pending
   test "encode O M G" do
     assert Atbash.encode("O M G") == "lnt"
   end
 
-  @tag :pending
+  #@tag :pending
   test "encode long word" do
     assert Atbash.encode("mindblowingly") == "nrmwy oldrm tob"
   end
