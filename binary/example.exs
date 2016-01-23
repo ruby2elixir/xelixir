@@ -1,4 +1,9 @@
 defmodule Binary do
+  @doc """
+  Convert a string containing a binary number to an integer.
+
+  On errors returns 0.
+  """
   def to_decimal(string) do
     if !String.match?(string, ~r{[^10]}) do
       string |> bits |> Enum.reverse |> Enum.with_index |> sum

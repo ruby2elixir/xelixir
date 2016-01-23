@@ -1,0 +1,2 @@
+- my solution looks very similar to example, that is good!
+- my understanding of bits and binaries is still kinda fuzzy... need to revisit it sometime.
