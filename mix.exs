@@ -13,6 +13,9 @@ defmodule ExercismTestRunner.Mixfile do
   end
 
   defp deps do
-    [{:poison, "~> 1.4.0"}]
+    [
+      {:poison, "~> 1.4.0"},
+      {:benchfella, "~> 0.3.0"}
+    ]
   end
 end
