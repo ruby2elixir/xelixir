@@ -9,6 +9,11 @@ defmodule ETL do
   """
   @spec transform(Dict.t) :: map()
   def transform(input) do
+    Enum.reduce(input, %{}, fn({k,values}, acc) -> Map.merge(acc, transpose(k, values)) end)
+  end
 
+  def transpose(key, values) do
+    for v <- values, into: %{}, do: {String.downcase(v), key }
   end
 end
+
