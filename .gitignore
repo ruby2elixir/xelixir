@@ -6,3 +6,5 @@ bin/configlet
 bin/configlet*
 deps
 _build
+
+bench/snapshots/*
